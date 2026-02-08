@@ -1,6 +1,6 @@
 FROM ubuntu
 RUN apt update -y &&\
-    apt install default-jdk -y &&\
+    apt install -y openjdk-21-jdk && \
     java -version
 RUN apt install maven -y &&\
     mvn -version
